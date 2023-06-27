@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import FriendEdit from "./pages/FriendEdit"
+import FriendShow from "./pages/FriendShow"
+import FriendNew from "./pages/FriendNew"
+import FriendIndex from "./pages/FriendIndex"
+import Home from "./pages/Home"
+import NotFound from "./pages/NotFound"
+import MockFriends from "./MockFriends"
+import { useState } from 'react';
 
 function App() {
+
+  const [friends, setFriends] = useState(MockFriends)
+  console.log(friends);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/friendindex" element={<FriendIndex />} />
+      <Route path="/friendshow" element={<FriendShow />} />
+      <Route path="/friendnew" element={<FriendNew />} />
+      <Route path="/friendedit" element={<FriendEdit />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+    <Footer />
+    </>
   );
 }
 
