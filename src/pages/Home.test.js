@@ -11,7 +11,6 @@ describe("<Home />", () => {
   )})
 
   it("has header", () => {
-    screen.logTestingPlaygroundURL()
       expect(screen.getByText(/home/i)).toBeInTheDocument
   })
 
