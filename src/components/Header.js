@@ -10,9 +10,7 @@ const Header = (props) => {
   return (
     <Nav tabs>
       <NavItem>
-        <NavLink href="/" >
-          Home
-        </NavLink>
+        <NavLink href="/" ><div className='homeTest'>Home</div></NavLink>
       </NavItem>
       <NavItem>
         <NavLink href="/friendindex" >All Friends</NavLink>
