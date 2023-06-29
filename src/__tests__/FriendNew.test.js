@@ -13,7 +13,6 @@ describe("<FriendIndex />", () => {
   )})
 
   it("has name label", () => {
-    screen.logTestingPlaygroundURL()
     expect(screen.getByText(/name/i)).toBeInTheDocument
   })
 
@@ -23,7 +22,6 @@ describe("<FriendIndex />", () => {
   })
 
   it("has species label", () => {
-    screen.logTestingPlaygroundURL()
     expect(screen.getByText(/species/i)).toBeInTheDocument
   })
 
@@ -32,8 +30,7 @@ describe("<FriendIndex />", () => {
     ).toBeInTheDocument
   })
 
-  it("has personality label", () => {
-    screen.logTestingPlaygroundURL()
+  it("has personality label", () => {  
     expect(screen.getByText(/personality/i)).toBeInTheDocument
   })
 
@@ -42,7 +39,6 @@ describe("<FriendIndex />", () => {
     ).toBeInTheDocument
   })
   it("has favorite activies label", () => {
-    screen.logTestingPlaygroundURL()
     expect(screen.getByText(/favorite activies/i)).toBeInTheDocument
   })
 
@@ -51,7 +47,6 @@ describe("<FriendIndex />", () => {
     ).toBeInTheDocument
   })
   it("has size label", () => {
-    screen.logTestingPlaygroundURL()
     expect(screen.getByText(/size/i)).toBeInTheDocument
   })
 
@@ -61,7 +56,6 @@ describe("<FriendIndex />", () => {
   })
 
   it("has diet label", () => {
-    screen.logTestingPlaygroundURL()
     expect(screen.getByText(/diet/i)).toBeInTheDocument
   })
 
@@ -70,7 +64,6 @@ describe("<FriendIndex />", () => {
     ).toBeInTheDocument
   })
   it("has age label", () => {
-    screen.logTestingPlaygroundURL()
     expect(screen.getByText(/age/i)).toBeInTheDocument
   })
 
