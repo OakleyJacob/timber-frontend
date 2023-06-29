@@ -14,7 +14,9 @@ import { useState } from 'react';
 function App() {
 
   const [friends, setFriends] = useState(MockFriends)
-
+  const createFriend = (friend) => {
+    console.log(friend);
+  }
   return (
     <>
     <Header />
@@ -22,7 +24,7 @@ function App() {
       <Route path="/" element={<Home friends={friends}/>} />
       <Route path="/friendindex" element={<FriendIndex friends={friends}/>} />
       <Route path="/friendshow/:id" element={<FriendShow friends={friends}/>} />
-      <Route path="/friendnew" element={<FriendNew />} />
+      <Route path="/friendnew" element={<FriendNew createFriend={createFriend}/>} />
       <Route path="/friendedit" element={<FriendEdit />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

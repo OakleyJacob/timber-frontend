@@ -4,8 +4,7 @@ import {
   CardTitle,
   CardText,
   Card,
-  CardImg, 
-  NavLink
+  CardImg
 } from 'reactstrap';
 
 const NotFound = () => {
