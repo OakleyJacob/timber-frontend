@@ -1,35 +1,59 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import {
-  UncontrolledCarousel
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button
 } from 'reactstrap';
 
-const FriendIndex = () => {
+const FriendIndex = ({friends}) => {
+
+
   return (
     <>
-    <div>FriendIndex</div>
-    <UncontrolledCarousel
-  items={[
-    {
-      altText: 'Slide 1',
-      caption: 'Slide 1',
-      key: 1,
-      src: 'https://picsum.photos/id/123/1200/600'
-    },
-    {
-      altText: 'Slide 2',
-      caption: 'Slide 2',
-      key: 2,
-      src: 'https://picsum.photos/id/456/1200/600'
-    },
-    {
-      altText: 'Slide 3',
-      caption: 'Slide 3',
-      key: 3,
-      src: 'https://picsum.photos/id/678/1200/600'
-    }
-  ]}
- />
- </>
+    <h2>Check Out All Our Trees!</h2>
+    <ul style={{listStyle:'none'}}>
+      {friends?.map(friend => {
+      return ( 
+        <li key={friend.id}><Card
+          style={{
+            width: '18rem'
+          }}
+        >
+        <img
+          alt={"Photo of User" + friend.name}
+          src={friend.img}
+        />
+
+        <CardBody>
+          <CardTitle tag="h5">
+            Hi My Name is <span>{friend.name}</span>
+          </CardTitle>
+          <CardSubtitle
+            className="mb-2 text-muted"
+            tag="h6"
+          >
+            I am a {friend.species}
+          </CardSubtitle>
+          <CardText>
+            I am {friend.personality}
+          </CardText>
+ 
+          <NavLink to={`/friendshow/${friend.id}`}>
+            <Button>
+            View {friend.name}'s Profile
+            </Button>
+          </NavLink>
+        </CardBody>
+      </Card>
+      </li>
+    )
+  })}
+      </ul>
+    </>
   )
 }
 

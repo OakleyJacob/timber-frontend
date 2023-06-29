@@ -8,7 +8,7 @@ const friends = [
     size: 'small',
     diet: 'veggies',
     activities: 'running.',
-    img: 'picture url'
+    img: 'https://picsum.photos/id/124/1200/600'
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const friends = [
     size: 'extra large',
     diet: 'termites',
     activities: 'pooping on things.',
-    img: 'nice picture'
+    img: 'https://picsum.photos/id/124/1200/600'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const friends = [
     size: 'medium',
     diet: 'tuna',
     activities: 'Likes to cuddle quiet dogs.',
-    img: 'pictures'
+    img: 'https://picsum.photos/id/124/1200/600'
   },
   
 ]

@@ -1,17 +1,20 @@
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Home from './Home';
+import MockFriends from '../MockFriends'
+import Home from '../pages/Home';
 
 describe("<Home />", () => {
   beforeEach(() => {
     render(
     <BrowserRouter>
-      <Home />
+      <Home friends={MockFriends}/>
     </BrowserRouter>
   )})
 
   it("has header", () => {
-      expect(screen.getByText(/home/i)).toBeInTheDocument
+      expect(screen.getByRole('heading', {
+        name: /welcome to timber!/i
+      })).toBeInTheDocument
   })
 
 })
