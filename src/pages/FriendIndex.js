@@ -14,6 +14,7 @@ const FriendIndex = ({friends}) => {
 
   return (
     <>
+    <h2>Check Out All Our Trees!</h2>
     <ul style={{listStyle:'none'}}>
       {friends?.map(friend => {
       return ( 
@@ -29,7 +30,7 @@ const FriendIndex = ({friends}) => {
 
         <CardBody>
           <CardTitle tag="h5">
-            Hi My Name is {friend.name}
+            Hi My Name is <span>{friend.name}</span>
           </CardTitle>
           <CardSubtitle
             className="mb-2 text-muted"
@@ -43,7 +44,7 @@ const FriendIndex = ({friends}) => {
  
           <NavLink to={`/friendshow/${friend.id}`}>
             <Button>
-            View Profile
+            View {friend.name}'s Profile
             </Button>
           </NavLink>
         </CardBody>
