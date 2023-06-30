@@ -1,3 +1,4 @@
+import styles from '../styles/Home.css'
 import React from 'react'
 import {
   UncontrolledCarousel
@@ -13,13 +14,15 @@ const Home = ({friends}) => {
   })
   
   return (
-    <>
-        <div data-testid="homeTest" />
+  <>
+    <div data-testid="homeTest" />
       <h1>Welcome to Timber!</h1>
-
-    <UncontrolledCarousel
-  items={slides}
-  />
+      <h3> Go out on a limb to find someone you'll fall for.</h3>
+      <div className='carousel'>
+      <UncontrolledCarousel
+          items={slides}
+      />
+    </div>
   </>
   )
   

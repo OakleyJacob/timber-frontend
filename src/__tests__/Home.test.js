@@ -16,5 +16,10 @@ describe("<Home />", () => {
         name: /welcome to timber!/i
       })).toBeInTheDocument
   })
+  it("has header", () => {
+    expect(screen.getByRole('heading', {
+      name: /go out on a limb to find someone you'll fall for./i
+    })).toBeInTheDocument
+})
 
 })

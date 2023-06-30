@@ -9,7 +9,6 @@ const FriendNew = ({createFriend}) => {
     size:'',
     activities:'',
     personality:'',
-    diet:'',
     img:''
   })
 
@@ -110,19 +109,7 @@ const FriendNew = ({createFriend}) => {
             </FormGroup>
           </Col>
           <Col md={4}>
-            <FormGroup>
-              <Label for="diet">
-                Diet
-              </Label>
-              <Input
-                
-                name="diet"
-                placeholder= "What nutrients do you like?"
-                type = 'text'
-                onChange = {handleChange}
-                value={friend.diet}
-              />
-            </FormGroup>
+
           </Col>
           <Col md={2}>
             <FormGroup>
@@ -142,7 +129,7 @@ const FriendNew = ({createFriend}) => {
         </Row>
 
         <Button onClick = {handleSubmit}>
-        Create Profile
+           Create Profile
         </Button>
       </Form>
     </>
