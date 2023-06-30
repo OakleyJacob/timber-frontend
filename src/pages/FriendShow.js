@@ -32,25 +32,24 @@ const FriendShow = ({friends}) => {
         {singleFriend.name}
       </CardTitle>
       <CardText>
-      Species: {singleFriend.species}
-      <br/>
-      Age: {singleFriend.age} 
-      <br/>
-      Personality: {singleFriend.personality}
-      <br/>
-      Diet: {singleFriend.diet}
-      <br/>
-      Favorite Activities: {singleFriend.activities}
-      <br/>
-      Size Class: {singleFriend.size}
-      
+        Species: {singleFriend.species}
+        <br/>
+        Age: {singleFriend.age} 
+        <br/>
+        Personality: {singleFriend.personality}
+        <br/>
+        Diet: {singleFriend.diet}
+        <br/>
+        Favorite Activities: {singleFriend.activities}
+        <br/>
+        Size Class: {singleFriend.size}
       </CardText>
     </CardBody>
     <NavLink to={`/friendEdit/${singleFriend.id}`}>
-            <Button>
-            Edit {singleFriend.name}'s Profile
-            </Button>
-          </NavLink>
+      <Button>
+        Edit {singleFriend.name}'s Profile
+      </Button>
+    </NavLink>
   </Card>
   </>
   )

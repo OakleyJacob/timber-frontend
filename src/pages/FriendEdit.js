@@ -20,8 +20,6 @@ const FriendEdit = ({friends, editFriend}) => {
     img: singleFriend.img
   })
 
-  
-
   const navigate = useNavigate()
 
   const handleChange = (e) => {
@@ -30,8 +28,8 @@ const FriendEdit = ({friends, editFriend}) => {
   const handleSubmit = () => {
     editFriend(friend)
     navigate(`/friendshow/${id}`)
-
   }
+
   return (
     <>
       <Form>
@@ -122,7 +120,6 @@ const FriendEdit = ({friends, editFriend}) => {
                 Diet
               </Label>
               <Input
-                
                 name="diet"
                 placeholder= "What nutrients do you like?"
                 type = 'text'
