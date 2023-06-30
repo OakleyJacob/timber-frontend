@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '../styles/FriendIndex.css'
 import { NavLink } from 'react-router-dom';
 import {
   Card,
