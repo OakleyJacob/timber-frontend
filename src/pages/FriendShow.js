@@ -47,7 +47,7 @@ const FriendShow = ({friends}) => {
     </CardBody>
     <NavLink to={`/friendEdit/${singleFriend.id}`}>
       <Button>
-        Edit {singleFriend.name}'s Profile
+        Edit or Delete {singleFriend.name}'s Profile
       </Button>
     </NavLink>
   </Card>

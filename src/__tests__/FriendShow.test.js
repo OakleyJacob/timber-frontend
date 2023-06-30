@@ -33,6 +33,12 @@ describe("<FriendShow />", () => {
       /species: leoparage: 3personality: louddiet: veggiesfavorite activities: running\.size class: 6/i
       )).toBeInTheDocument
   })
+  it("has edit/delete button", () => {
+    screen.logTestingPlaygroundURL
+    expect(screen.getByRole('button', {
+        name: /edit or delete sam's profile/i
+      })).toBeInTheDocument
+  })
 
 })
 
