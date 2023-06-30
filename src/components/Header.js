@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import logo from "../assets/treelogo.png"
+import logo from "../assets/treelogo.png"
 import {
   Nav,
   NavItem,
@@ -10,16 +10,17 @@ const Header = (props) => {
 
   return (
     <>
-    {/* <img
+    <img
     alt="logo"
     src={logo}
     style={{
-      height: 60,
-      width: 60,
+      height: 40,
+      width: 40,
       mixBlendMode: 'multiply',
       filter: 'brightness(125%)',
+      float: 'left'
     }}
-  /> */}
+  />
     <Nav tabs>
       <NavItem>
         <NavLink href="/" ><div className='homeTest'>Home</div></NavLink>

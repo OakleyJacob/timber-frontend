@@ -37,6 +37,11 @@ describe("<Header />", () => {
     const friendsLink = container.getElementsByClassName('homeTest')
     expect(friendsLink).toBeInTheDocument
   })
+  it("has logo", () => {
+    expect(screen.getByRole('img', {
+      name: /logo/i
+    })).toBeInTheDocument
+})
 
 
 })

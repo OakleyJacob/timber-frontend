@@ -64,14 +64,7 @@ describe("<FriendNew />", () => {
     ).toBeInTheDocument
   })
 
-  it("has diet label", () => {
-    expect(screen.getByText(/diet/i)).toBeInTheDocument
-  })
 
-  it("has diet field", () => {
-    expect(screen.getByPlaceholderText(/what nutrients do you like?/i)
-    ).toBeInTheDocument
-  })
   it("has age label", () => {
     expect(screen.getByText(/age/i)).toBeInTheDocument
   })

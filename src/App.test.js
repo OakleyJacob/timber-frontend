@@ -19,7 +19,7 @@ describe("<App />", () => {
 
   it("has footer", () => {
       expect(screen.getByRole('link', {
-        name: /logo jc mingle/i
+        name: /jc mingle © chris frey and jacob oakley 2023/i
       })).toBeInTheDocument
   })
  

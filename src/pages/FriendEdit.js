@@ -3,7 +3,7 @@ import {Form, Row, Col, FormGroup, Label, Input, Button} from 'reactstrap'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
 
-const FriendEdit = ({friends, editFriend, deleteFriend}) => {
+const FriendEdit = ({friends, editFriend}) => {
   
   const{id} = useParams()
   
@@ -16,7 +16,6 @@ const FriendEdit = ({friends, editFriend, deleteFriend}) => {
     size: singleFriend.size,
     activities: singleFriend.activities,
     personality: singleFriend.personality,
-    diet: singleFriend.diet,
     img: singleFriend.img
   })
 
@@ -26,13 +25,10 @@ const FriendEdit = ({friends, editFriend, deleteFriend}) => {
     setFriend({...friend, [e.target.name]: e.target.value})
   }
   const handleSubmit = () => {
-    editFriend(friend)
+    editFriend(friend, id)
     navigate(`/friendshow/${id}`)
   }
-  const handleDelete = () => {
-    deleteFriend(friend)
-    navigate(`/`)
-  }
+
 
   return (
     <>
@@ -119,18 +115,6 @@ const FriendEdit = ({friends, editFriend, deleteFriend}) => {
             </FormGroup>
           </Col>
           <Col md={4}>
-            <FormGroup>
-              <Label for="diet">
-                Diet
-              </Label>
-              <Input
-                name="diet"
-                placeholder= "What nutrients do you like?"
-                type = 'text'
-                onChange = {handleChange}
-                value={friend.diet}
-              />
-            </FormGroup>
           </Col>
           <Col md={2}>
             <FormGroup>
@@ -138,7 +122,6 @@ const FriendEdit = ({friends, editFriend, deleteFriend}) => {
                 Age
               </Label>
               <Input
-
                 name="age"
                 placeholder= "How many rings?"
                 type = 'number'
@@ -152,9 +135,7 @@ const FriendEdit = ({friends, editFriend, deleteFriend}) => {
         <Button onClick = {handleSubmit}>
         Edit Profile
         </Button>
-        <Button onClick = {handleDelete}>
-        Delete Profile
-        </Button>
+      
       </Form>
     </>
   )

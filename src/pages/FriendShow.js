@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, NavLink } from 'react-router-dom';
+import { useParams, NavLink, useNavigate } from 'react-router-dom';
 import {
   CardBody,
   CardTitle,
@@ -10,10 +10,14 @@ import {
 } from 'reactstrap';
 
 
-const FriendShow = ({friends}) => {
+const FriendShow = ({friends, deleteFriend}) => {
   const{id} = useParams()
+  const navigate = useNavigate()
   const singleFriend = friends?.find(friend => {return friend.id == id})
-
+  const handleDelete = () => {
+    deleteFriend(id)
+    navigate(`/friendindex`)
+  }
   return (
     <>
     <Card className="my-2">
@@ -38,16 +42,18 @@ const FriendShow = ({friends}) => {
         <br/>
         Personality: {singleFriend.personality}
         <br/>
-        Diet: {singleFriend.diet}
-        <br/>
         Favorite Activities: {singleFriend.activities}
         <br/>
         Size Class: {singleFriend.size}
       </CardText>
     </CardBody>
+      <Button onClick = {handleDelete}>
+        Delete Profile
+      </Button>
     <NavLink to={`/friendEdit/${singleFriend.id}`}>
+ 
       <Button>
-        Edit or Delete {singleFriend.name}'s Profile
+        Edit {singleFriend.name}'s Profile
       </Button>
     </NavLink>
   </Card>
