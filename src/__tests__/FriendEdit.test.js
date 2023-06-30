@@ -82,9 +82,16 @@ describe("<FriendEdit />", () => {
     expect(screen.getByPlaceholderText(/How many rings?/i)
     ).toBeInTheDocument
   })
-  it("has submit button", () => {
+ 
+  it("has edit button", () => {
     expect(screen.getByRole('button', {
         name: /edit profile/i
+      })).toBeInTheDocument
+  })
+
+  it("has delete button", () => {
+    expect(screen.getByRole('button', {
+        name: /delete profile/i
       })).toBeInTheDocument
   })
 

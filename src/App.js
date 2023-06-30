@@ -21,6 +21,9 @@ function App() {
   const editFriend = (friend) => {
     console.log(friend);
   }
+  const deleteFriend = (friend) => {
+    console.log(friend);
+  }
   
   return (
     <>
@@ -30,7 +33,7 @@ function App() {
       <Route path="/friendindex" element={<FriendIndex friends={friends}/>} />
       <Route path="/friendshow/:id" element={<FriendShow friends={friends}/>} />
       <Route path="/friendnew" element={<FriendNew createFriend={createFriend}/>} />
-      <Route path="/friendedit/:id" element={<FriendEdit editFriend={editFriend} friends={friends}/>} />
+      <Route path="/friendedit/:id" element={<FriendEdit editFriend={editFriend} friends={friends} deleteFriend={deleteFriend}/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
