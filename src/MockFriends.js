@@ -5,7 +5,7 @@ const friends = [
     species: 'leopar',
     age: 3,
     personality: 'loud',
-    size: 'small',
+    size: 6,
     diet: 'veggies',
     activities: 'running.',
     img: 'https://picsum.photos/id/124/1200/600'
@@ -16,7 +16,7 @@ const friends = [
     species: 'sloth',
     age: 5,
     personality: 'calm',
-    size: 'extra large',
+    size: 12,
     diet: 'termites',
     activities: 'pooping on things.',
     img: 'https://picsum.photos/id/124/1200/600'
@@ -27,7 +27,7 @@ const friends = [
     species: 'dog',
     age: 13,
     personality: 'friendly-ish',
-    size: 'medium',
+    size: 20,
     diet: 'tuna',
     activities: 'Likes to cuddle quiet dogs.',
     img: 'https://picsum.photos/id/124/1200/600'

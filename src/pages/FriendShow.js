@@ -1,16 +1,18 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, NavLink } from 'react-router-dom';
 import {
   CardBody,
   CardTitle,
   CardText,
   Card,
   CardImg, 
+  Button
 } from 'reactstrap';
+
 
 const FriendShow = ({friends}) => {
   const{id} = useParams()
-  const singleFriend = friends.find(friend => {return friend.id == id})
+  const singleFriend = friends?.find(friend => {return friend.id == id})
 
   return (
     <>
@@ -30,20 +32,24 @@ const FriendShow = ({friends}) => {
         {singleFriend.name}
       </CardTitle>
       <CardText>
-      Species: {singleFriend.species}
-      <br/>
-      Age: {singleFriend.age} 
-      <br/>
-      Personality: {singleFriend.personality}
-      <br/>
-      Diet: {singleFriend.diet}
-      <br/>
-      Favorite Activities: {singleFriend.activities}
-      <br/>
-      Size Class: {singleFriend.size}
-      
+        Species: {singleFriend.species}
+        <br/>
+        Age: {singleFriend.age} 
+        <br/>
+        Personality: {singleFriend.personality}
+        <br/>
+        Diet: {singleFriend.diet}
+        <br/>
+        Favorite Activities: {singleFriend.activities}
+        <br/>
+        Size Class: {singleFriend.size}
       </CardText>
     </CardBody>
+    <NavLink to={`/friendEdit/${singleFriend.id}`}>
+      <Button>
+        Edit {singleFriend.name}'s Profile
+      </Button>
+    </NavLink>
   </Card>
   </>
   )

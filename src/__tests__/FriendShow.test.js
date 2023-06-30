@@ -30,7 +30,7 @@ describe("<FriendShow />", () => {
 
   it("has user attributes", () => {
     expect(screen.getByText(
-      /species: leoparage: 3personality: louddiet: veggiesfavorite activities: running\.size class: small/i
+      /species: leoparage: 3personality: louddiet: veggiesfavorite activities: running\.size class: 6/i
       )).toBeInTheDocument
   })
 

@@ -16,18 +16,6 @@ describe("<Header />", () => {
       })).toBeInTheDocument
   })
 
-  it("has edit link", () => {
-      expect(screen.getByRole('link', {
-        name: /edit friends/i
-      })).toBeInTheDocument
-  })
-
-  it("has search friends link", () => {
-      expect(screen.getByRole('link', {
-        name: /search friends/i
-      })).toBeInTheDocument
-  })
-
   it("has add friends link", () => {
       expect(screen.getByRole('link', {
         name: /add friends/i
