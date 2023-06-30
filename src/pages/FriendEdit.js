@@ -3,7 +3,7 @@ import {Form, Row, Col, FormGroup, Label, Input, Button} from 'reactstrap'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
 
-const FriendEdit = ({friends, editFriend}) => {
+const FriendEdit = ({friends, editFriend, deleteFriend}) => {
   
   const{id} = useParams()
   
@@ -28,6 +28,10 @@ const FriendEdit = ({friends, editFriend}) => {
   const handleSubmit = () => {
     editFriend(friend)
     navigate(`/friendshow/${id}`)
+  }
+  const handleDelete = () => {
+    deleteFriend(friend)
+    navigate(`/`)
   }
 
   return (
@@ -147,6 +151,9 @@ const FriendEdit = ({friends, editFriend}) => {
 
         <Button onClick = {handleSubmit}>
         Edit Profile
+        </Button>
+        <Button onClick = {handleDelete}>
+        Delete Profile
         </Button>
       </Form>
     </>
