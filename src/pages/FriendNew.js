@@ -7,9 +7,10 @@ const FriendNew = ({createFriend}) => {
     age: '',
     species:'',
     size:'',
-    activies:'',
+    activities:'',
     personality:'',
-    diet:''
+    diet:'',
+    img:''
   })
 
   const navigate = useNavigate()
@@ -36,6 +37,7 @@ const FriendNew = ({createFriend}) => {
                 placeholder="add your name"
                 type="text"
                 onChange = {handleChange}
+                value={friend.name}
               />
             </FormGroup>
           </Col>
@@ -49,10 +51,23 @@ const FriendNew = ({createFriend}) => {
                 placeholder="enter your species"
                 type="text"
                 onChange = {handleChange}
+                value={friend.species}
               />
             </FormGroup>
           </Col>
         </Row>
+        <FormGroup>
+          <Label for="image URL">
+            Photo
+          </Label>
+          <Input
+            name="img"
+            placeholder="What is your image URL?"
+            type='textarea'
+            onChange = {handleChange}
+            value={friend.img}
+          />
+        </FormGroup>
         <FormGroup>
           <Label for="personality">
             Personality
@@ -63,17 +78,19 @@ const FriendNew = ({createFriend}) => {
             placeholder="What is your personality?"
             type='textarea'
             onChange = {handleChange}
+            value={friend.personality}
           />
         </FormGroup>
         <FormGroup>
           <Label for="activites">
-            Favorite Activies
+            Favorite Activities
           </Label>
           <Input
-            name="activies"
+            name="activities"
             placeholder="What do you like to do?"
             type='textarea'
             onChange = {handleChange}
+            value={friend.activities}
           />
         </FormGroup>
         <Row>
@@ -88,6 +105,7 @@ const FriendNew = ({createFriend}) => {
                 placeholder="What is your height in feet?"
                 type='number'
                 onChange = {handleChange}
+                value={friend.size}
               />
             </FormGroup>
           </Col>
@@ -102,6 +120,7 @@ const FriendNew = ({createFriend}) => {
                 placeholder= "What nutrients do you like?"
                 type = 'text'
                 onChange = {handleChange}
+                value={friend.diet}
               />
             </FormGroup>
           </Col>
@@ -116,6 +135,7 @@ const FriendNew = ({createFriend}) => {
                 placeholder= "How many rings?"
                 type = 'number'
                 onChange = {handleChange}
+                value={friend.age}
               />
             </FormGroup>
           </Col>

@@ -1,16 +1,18 @@
 import { render, screen } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
-import FriendNew from "../pages/FriendNew";
+import FriendEdit from "../pages/FriendEdit";
+import MockFriends from '../MockFriends'
+import { MemoryRouter, Routes, Route } from "react-router-dom";
 
 
-
-describe("<FriendNew />", () => {
+describe("<FriendEdit />", () => {
   beforeEach(() => {
     render(
-    <BrowserRouter>
-      <FriendNew />
-    </BrowserRouter>
-  )})
+      <MemoryRouter initialEntries={["/friendedit/1"]}>
+        <Routes>
+          <Route path="/friendedit/:id" element={<FriendEdit friends={MockFriends} />}/>
+        </Routes>
+      </MemoryRouter>
+    )})
 
   it("has name label", () => {
     expect(screen.getByText(/name/i)).toBeInTheDocument
@@ -31,7 +33,7 @@ describe("<FriendNew />", () => {
   })
 
   it("has img label", () => {  
-    expect(screen.getByText(/photo/i)).toBeInTheDocument
+    expect(screen.getByText(/upload your photo/i)).toBeInTheDocument
   })
 
   it("has img field", () => {
@@ -82,7 +84,7 @@ describe("<FriendNew />", () => {
   })
   it("has submit button", () => {
     expect(screen.getByRole('button', {
-        name: /create profile/i
+        name: /edit profile/i
       })).toBeInTheDocument
   })
 

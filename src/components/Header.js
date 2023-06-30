@@ -16,12 +16,6 @@ const Header = (props) => {
         <NavLink href="/friendindex" >All Friends</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/friendshow">Search Friends</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href="/friendedit">Edit Friends</NavLink>
-      </NavItem>
-      <NavItem>
         <NavLink href="/friendnew">Add Friends</NavLink>
       </NavItem>
    
