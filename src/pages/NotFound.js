@@ -13,9 +13,10 @@ const NotFound = () => {
   <Card className="my-2">
     <CardImg
       alt="Card image cap"
-      src="https://picsum.photos/1200/600"
+      src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
       style={{
-        height: 500
+        height: 500,
+        width: 800
       }}
       top
       width="100%"
