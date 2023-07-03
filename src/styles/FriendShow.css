@@ -1,8 +1,10 @@
-* {
-  
-}
+/* .buttons {
+  margin-bottom: 00px;
+} */
 
-h1 {
-  display: flex;
-  justify-content: center;
+.my-2.card.show {
+  background-color: red;
+  width: 800px;
+  height: 900px;
+  
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '../styles/Header.css'
 import logo from "../assets/treelogo.png"
 import {
   Nav,
@@ -12,24 +13,26 @@ const Header = (props) => {
     <>
     <img
     alt="logo"
+    className='logo'
     src={logo}
     style={{
-      height: 40,
-      width: 40,
+      height: 60,
+      width: 60,
+      borderRadius: '50%',
       mixBlendMode: 'multiply',
       filter: 'brightness(125%)',
       float: 'left'
     }}
   />
-    <Nav tabs>
+    <Nav tabs className='navbar'>
       <NavItem>
         <NavLink href="/" ><div className='homeTest'>Home</div></NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/friendindex" >All Friends</NavLink>
+        <NavLink href="/friendindex" ><div className='homeTest'>All Friends</div></NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/friendnew">Add Friends</NavLink>
+        <NavLink href="/friendnew"><div className='homeTest'>Add Friends</div></NavLink>
       </NavItem>
    
     </Nav>

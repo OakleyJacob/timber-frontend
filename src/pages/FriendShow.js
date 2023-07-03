@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '../styles/FriendShow.css'
 import { useParams, NavLink, useNavigate } from 'react-router-dom';
 import {
   CardBody,
@@ -14,16 +15,17 @@ const FriendShow = ({friends, deleteFriend}) => {
   const{id} = useParams()
   const navigate = useNavigate()
   const singleFriend = friends?.find(friend => {return friend.id == id})
+  console.log(friends);
   const handleDelete = () => {
     deleteFriend(id)
     navigate(`/friendindex`)
   }
   return (
     <>
-    <Card className="my-2">
+    <Card className="my-2 show">
     <CardImg
       alt="Card image cap"
-      src="https://picsum.photos/500/500"
+      src={singleFriend?.img}
       style={{
         height: 500,
         width: 500
@@ -33,30 +35,33 @@ const FriendShow = ({friends, deleteFriend}) => {
     />
     <CardBody>
       <CardTitle tag="h5">
-        {singleFriend.name}
+        {singleFriend?.name}
       </CardTitle>
       <CardText>
-        Species: {singleFriend.species}
+        Species: {singleFriend?.species}
         <br/>
-        Age: {singleFriend.age} 
+        Age: {singleFriend?.age} 
         <br/>
-        Personality: {singleFriend.personality}
+        Personality: {singleFriend?.personality}
         <br/>
-        Favorite Activities: {singleFriend.activities}
+        Favorite Activities: {singleFriend?.activities}
         <br/>
-        Size Class: {singleFriend.size}
+        Size : {singleFriend?.size} feet
       </CardText>
     </CardBody>
-      <Button onClick = {handleDelete}>
+    <div className='buttons'>
+      <Button onClick = {handleDelete} id='deleteButton'>
         Delete Profile
       </Button>
-    <NavLink to={`/friendEdit/${singleFriend.id}`}>
- 
-      <Button>
-        Edit {singleFriend.name}'s Profile
+    <NavLink to={`/friendEdit/${singleFriend?.id}`}>
+      <Button id='editButton'>
+        Edit {singleFriend?.name}'s Profile
       </Button>
     </NavLink>
+    </div>
+
   </Card>
+  <div className='block'></div>
   </>
   )
 }

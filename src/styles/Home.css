@@ -1,18 +1,30 @@
 * {
   margin: 5px, white, solid;
+  
 }
 
-h1 {
+
+.header1 {
   display: flex;
   justify-content: center;
+  padding-top: 50px;
 }
-h3 {
+.subHeader {
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
 }
 
 .carousel {
-  width: 90%;
+  width: 500px;
+  height: 600px;
   margin: auto;
   margin-bottom: 30px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 0.5rem rgb(101, 90, 92));
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 600px;
 }

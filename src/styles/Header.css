@@ -1,0 +1,29 @@
+* {
+  text-decoration: none;
+}
+
+.homeTest {
+  font-size: 18px;
+  color: black;
+  background-color: #bebf69;
+  border-radius: 5px;
+  margin-left: 100px;
+}
+
+.nav {
+
+  width: 100%;
+  position: fixed;
+  background-color: #bebf69;
+  color: black;
+}
+
+.logo {
+  z-index: 1;
+  position: absolute;
+}
+
+/* .nav-tabs {
+  background-color: red;
+  justify-content: left;
+} */

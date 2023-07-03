@@ -15,17 +15,8 @@ const Footer = () => {
   }, []);
   return (
     <>
-    <Navbar
-      className="my-2"
-      color="secondary"
-      dark
-      >
-      <NavbarBrand href="/">
-
-      
-         JC Mingle &copy; Chris Frey and Jacob Oakley {currentYear}
-      </NavbarBrand>
-    </Navbar>
+         <div className='footerText'>JC Mingle &copy; Chris Frey and Jacob Oakley {currentYear} </div>
+ 
   </>
   )
 }
