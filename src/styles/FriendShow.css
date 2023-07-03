@@ -1,10 +1,19 @@
-/* .buttons {
-  margin-bottom: 00px;
-} */
+.buttons {
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
 
-.my-2.card.show {
-  background-color: red;
-  width: 800px;
+#editButton {
+  margin-left: 20px;
+
+}
+.showCardFull {
+  width: 500px;
+  height: 1000;
+}
+.showCard {
+  /* background-color: red; */
+  width: 500px;
   height: 900px;
   
 }

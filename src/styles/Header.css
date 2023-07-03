@@ -10,17 +10,19 @@
   margin-left: 100px;
 }
 
+.navbar {
+  margin-right: none;
+}
 .nav {
-
-  width: 100%;
-  position: fixed;
+  width: 100vw;
   background-color: #bebf69;
   color: black;
+  filter: drop-shadow(0 0 0.5rem rgb(101, 90, 92));
 }
 
 .logo {
   z-index: 1;
-  position: absolute;
+  position: fixed;
 }
 
 /* .nav-tabs {

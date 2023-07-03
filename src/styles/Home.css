@@ -7,7 +7,7 @@
 .header1 {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .subHeader {
   display: flex;
@@ -17,7 +17,7 @@
 
 .carousel {
   width: 500px;
-  height: 600px;
+  height: 700px;
   margin: auto;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -28,3 +28,9 @@
 .carousel-item img {
   height: 600px;
 }
+
+/* .carousel-caption.d-none.d-md-block {
+  background-color: rgba(0, 0, 0, 0.213);
+  height: 100px;
+
+} */
