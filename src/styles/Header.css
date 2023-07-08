@@ -20,12 +20,8 @@
   filter: drop-shadow(0 0 0.5rem rgb(101, 90, 92));
 }
 
-.logo {
-  z-index: 1;
+
+
+.nextui-c-egxOLa.nextui-navbar-container {
   position: fixed;
 }
-
-/* .nav-tabs {
-  background-color: red;
-  justify-content: left;
-} */

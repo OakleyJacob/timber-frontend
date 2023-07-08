@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom"
-import Header from "./components/Header"
+import Header from "./components/Header/Header"
 import Footer from "./components/Footer"
 import FriendEdit from "./pages/FriendEdit"
 import FriendShow from "./pages/FriendShow"
@@ -74,7 +74,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Home friends={friends}/>} />
       <Route path="/friendindex" element={<FriendIndex friends={friends}/>} />
-      <Route path="/friendnew" element={<FriendNew createFriend={createFriend} />} />
       <Route path="/friendshow/:id" element={<FriendShow friends={friends} deleteFriend={deleteFriend}/>} />
       <Route path="/friendnew" element={<FriendNew createFriend={createFriend} />} />
       <Route path="/friendedit/:id" element={<FriendEdit editFriend={editFriend} friends={friends} />} />

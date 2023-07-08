@@ -3,6 +3,25 @@
   
 }
 
+body {
+	background: linear-gradient(-45deg, #dad7cd, #a3b18a, #588157, #3a5a40, #344e41);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: cover;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .header1 {
   display: flex;
@@ -29,8 +48,3 @@
   height: 600px;
 }
 
-/* .carousel-caption.d-none.d-md-block {
-  background-color: rgba(0, 0, 0, 0.213);
-  height: 100px;
-
-} */
