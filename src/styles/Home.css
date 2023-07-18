@@ -1,18 +1,52 @@
 * {
   margin: 5px, white, solid;
+  
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
+body {
+	background: linear-gradient(-45deg, #dad7cd, #a3b18a, #588157, #3a5a40, #344e41);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: cover;
 }
-h3 {
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.header1 {
   display: flex;
   justify-content: center;
+
+  padding-top: 100px;
+}
+.subHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .carousel {
-  width: 90%;
+  width: 500px;
+  height: 700px;
   margin: auto;
   margin-bottom: 30px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 0.5rem rgb(101, 90, 92));
+  overflow: hidden;
 }
+
+.carousel-item img {
+  height: 600px;
+}
+
+

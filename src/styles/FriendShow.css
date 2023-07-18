@@ -1,8 +1,33 @@
-* {
-  
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
+#editButton {
+  margin-left: 20px;
+
+}
+.showCardFull {
+
+  width: 500px;
+  height: 1000;
+  margin-top: 300px;
+}
+
+.showCardFull.card {
+  padding-top: none;
+  max-height: 725px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topSpace {
+  height: 75px;
+}
+
+.bottomSpace {
+  height: 50px;
 }

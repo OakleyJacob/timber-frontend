@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import styles from '../styles/FriendNew.css'
 import {Form, Row, Col, FormGroup, Label, Input, Button} from 'reactstrap'
 import { useNavigate } from 'react-router-dom'
 const FriendNew = ({createFriend}) => {
@@ -24,7 +25,8 @@ const FriendNew = ({createFriend}) => {
   }
   return (
     <>
-      <Form>
+    <div className='topSpace'></div>
+      <Form className='form'>
         <Row>
           <Col md={6}>
             <FormGroup>
@@ -132,6 +134,7 @@ const FriendNew = ({createFriend}) => {
            Create Profile
         </Button>
       </Form>
+      <div className='BottomSpace'></div>
     </>
   )
 }

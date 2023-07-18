@@ -1,14 +1,23 @@
+
 ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  max-width: 1200px;
 }
 
-li {
-
+.card {
+  max-height: 700px;
 }
-
-h2 {
+.header {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
+  margin-bottom: 40px;
+}
+
+.card {
+  overflow: hidden;
+  filter: drop-shadow(0 0 0.5rem rgb(101, 90, 92));
+  margin: 20px;
 }

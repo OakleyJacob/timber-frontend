@@ -1,0 +1,25 @@
+* {
+  text-decoration: none;
+}
+
+.homeTest {
+  font-size: 18px;
+  color: black;
+  background-color: #bebf69;
+  border-radius: 5px;
+  margin-left: 100px;
+}
+
+.navbar {
+  margin-right: none;
+}
+.nav {
+  width: 100vw;
+  background-color: #bebf69;
+  color: black;
+  filter: drop-shadow(0 0 0.5rem rgb(101, 90, 92));
+}
+
+.nextui-c-egxOLa.nextui-navbar-container {
+  position: fixed;
+}

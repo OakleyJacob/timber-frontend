@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import styles from '../styles/FriendEdit.css'
 import {Form, Row, Col, FormGroup, Label, Input, Button} from 'reactstrap'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
@@ -32,7 +33,8 @@ const FriendEdit = ({friends, editFriend}) => {
 
   return (
     <>
-      <Form>
+    <div className='topSpace'></div>
+      <Form className='form'>
         <Row>
           <Col md={6}>
             <FormGroup>
@@ -137,6 +139,7 @@ const FriendEdit = ({friends, editFriend}) => {
         </Button>
       
       </Form>
+      <div className='bottomSpace'></div>
     </>
   )
 }
