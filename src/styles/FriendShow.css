@@ -1,6 +1,9 @@
 .buttons {
-  margin-left: 100px;
-  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
 }
 
 #editButton {
@@ -8,12 +11,23 @@
 
 }
 .showCardFull {
+
   width: 500px;
   height: 1000;
+  margin-top: 300px;
 }
-.showCard {
-  /* background-color: red; */
-  width: 500px;
-  height: 900px;
-  
+
+.showCardFull.card {
+  padding-top: none;
+  max-height: 725px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topSpace {
+  height: 75px;
+}
+
+.bottomSpace {
+  height: 50px;
 }

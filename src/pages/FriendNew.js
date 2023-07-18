@@ -25,6 +25,7 @@ const FriendNew = ({createFriend}) => {
   }
   return (
     <>
+    <div className='topSpace'></div>
       <Form className='form'>
         <Row>
           <Col md={6}>
@@ -133,6 +134,7 @@ const FriendNew = ({createFriend}) => {
            Create Profile
         </Button>
       </Form>
+      <div className='BottomSpace'></div>
     </>
   )
 }

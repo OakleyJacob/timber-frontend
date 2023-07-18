@@ -33,6 +33,7 @@ const FriendEdit = ({friends, editFriend}) => {
 
   return (
     <>
+    <div className='topSpace'></div>
       <Form className='form'>
         <Row>
           <Col md={6}>
@@ -138,6 +139,7 @@ const FriendEdit = ({friends, editFriend}) => {
         </Button>
       
       </Form>
+      <div className='bottomSpace'></div>
     </>
   )
 }

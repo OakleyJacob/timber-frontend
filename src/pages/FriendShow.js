@@ -22,6 +22,7 @@ const FriendShow = ({friends, deleteFriend}) => {
   }
   return (
     <>
+    <div className='topSpace'></div>
   <Card className="showCardFull">
     <CardImg
       alt="Card image cap"
@@ -49,7 +50,7 @@ const FriendShow = ({friends, deleteFriend}) => {
         Size : {singleFriend?.size} feet
       </CardText>
     </CardBody>
-    <div className='buttons'>
+    {/* <div className='buttons'>
       <Button onClick = {handleDelete} id='deleteButton'>
         Delete Profile
       </Button>
@@ -58,7 +59,7 @@ const FriendShow = ({friends, deleteFriend}) => {
         Edit {singleFriend?.name}'s Profile
       </Button>
     </NavLink>
-    </div>
+    </div> */}
 
   </Card>
   <div className='buttons'>
@@ -70,8 +71,9 @@ const FriendShow = ({friends, deleteFriend}) => {
         Edit {singleFriend?.name}'s Profile
       </Button>
     </NavLink>
-    </div>
+  </div>
   <div className='block'></div>
+  <div className='bottomSpace'></div>
   </>
   )
 }
