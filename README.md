@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Timber Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Timber Frontend repository! This is the frontend part of a full-stack application built using React.js. It provides users with full CRUD (Create, Read, Update, Delete) functionality and communicates with a Ruby on Rails backend via fetch calls.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `yarn test`
+## Introduction
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The Timber Frontend is the user interface for our full-stack application. It allows users to perform various operations related to our application's core functionality. Whether it's managing resources, creating new records, editing existing ones, or deleting unnecessary data, Timber Frontend provides a seamless experience for users.
 
-### `yarn build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **CRUD Functionality**: Perform Create, Read, Update, and Delete operations on resources.
+- **User-Friendly Interface**: An intuitive and user-friendly design for easy navigation and interaction.
+- **Responsive Design**: Ensures that the application looks and works great on various devices and screen sizes.
+- **Ruby on Rails Backend**: Communicates with the backend server, built with Ruby on Rails.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `yarn eject`
+- **React.js**: The frontend is built using React, a popular JavaScript library for building user interfaces.
+- **Ruby on Rails**: The backend is developed using Ruby on Rails, a powerful web application framework.
+- **Rspec and React Testing Library**: Testing frameworks.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get the Timber Frontend up and running on your local machine, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone this repository to your local machine:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/OakleyJacob/timber-frontend.git
+```
+Navigate to the project directory:
 
-## Learn More
+ ```bash
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+cd timber-frontend
+ ```
+Install the necessary dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ ```bash
 
-### Code Splitting
+npm install
+ ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Start the development server:
 
-### Analyzing the Bundle Size
+ ```bash
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm start
+ ```
+Now, you can access the Timber Frontend in your web browser at http://localhost:3000.
 
-### Making a Progressive Web App
+## Usage
+Once you have the Timber Frontend running locally, you can use it to interact with the Ruby on Rails backend and manage resources, as mentioned in the Features section. The frontend communicates with the backend via fetch calls, ensuring seamless data exchange.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
+If you would like to contribute to this project or report any issues, please follow these guidelines:
 
-### Advanced Configuration
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Make your changes and test them thoroughly.
+Commit your changes with descriptive commit messages.
+Push your changes to your forked repository.
+Create a pull request to the main branch of this repository.
+We welcome contributions from the community!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
